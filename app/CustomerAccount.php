@@ -13,6 +13,6 @@ class CustomerAccount extends Model
     }
 
     public function shoppingCart() {
-        return $this->morphOne('App\ShoppingCart', 'account');
+        return $this->hasOne(ShoppingCart::class);
     }
 }

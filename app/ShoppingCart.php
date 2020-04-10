@@ -11,7 +11,7 @@ class ShoppingCart extends Model
         return $this->belongsToMany(Product::class);
     }
 
-    public function account() {
-        return $this->morphTo();
+    public function customerAccount() {
+        return $this->belongsTo(CustomerAccount::class);
     }
 }
