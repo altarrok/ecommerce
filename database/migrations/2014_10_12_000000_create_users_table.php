@@ -19,6 +19,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->enum('user_state', ['active', 'banned']);
+            $table->unsignedBigInteger('account_id');
+            $table->string('account_type');
             $table->rememberToken();
             $table->timestamps();
         });
