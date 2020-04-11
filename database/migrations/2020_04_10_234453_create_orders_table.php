@@ -18,6 +18,7 @@ class CreateOrdersTable extends Migration
             $table->unsignedBigInteger('product_id');
             $table->unsignedBigInteger('seller_account_id')->nullable();
             $table->unsignedBigInteger('customer_account_id')->nullable();
+            $table->dateTime('order_time');
             $table->timestamps();
         });
     }
