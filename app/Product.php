@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+
+    protected $guarded = [];
     //
     public function shopping_carts() {
         return $this->belongsToMany(ShoppingCart::class);
