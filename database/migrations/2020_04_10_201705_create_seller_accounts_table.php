@@ -15,6 +15,7 @@ class CreateSellerAccountsTable extends Migration
     {
         Schema::create('seller_accounts', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->timestamps();
         });
     }

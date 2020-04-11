@@ -64,9 +64,10 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $customerAcc = CustomerAccount::create();
-        return $customerAcc->user()->create([
+        $customerAcc = CustomerAccount::create([
             'name' => $data['name'],
+        ]);
+        return $customerAcc->user()->create([
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'user_state' => 'active',

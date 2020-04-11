@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class CustomerAccount extends Model
 {
     //
+    protected $guarded = [];
 
     public function user() {
         return $this->morphOne('App\User', 'account');
