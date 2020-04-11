@@ -14,4 +14,8 @@ class Product extends Model
     public function inventory() {
         return $this->belongsTo(Inventory::class);
     }
+
+    public function order() {
+        return $this->hasOne(Order::class);
+    }
 }

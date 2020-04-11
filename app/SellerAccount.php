@@ -14,4 +14,8 @@ class SellerAccount extends Model
     public function inventory() {
         return $this->hasOne(Inventory::class);
     }
+
+    public function orders() {
+        return $this->hasMany(Order::class);
+    }
 }
