@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-class HomeController extends Controller
+use App\Product;
+
+class IndexController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -21,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $products = Product::inRandomOrder()->paginate(16);
+        return view('index', compact('products'));
     }
 }

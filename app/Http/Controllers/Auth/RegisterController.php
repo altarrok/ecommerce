@@ -67,6 +67,7 @@ class RegisterController extends Controller
         $customerAcc = CustomerAccount::create([
             'name' => $data['name'],
         ]);
+        $customerAcc->shoppingCart()->create();
         return $customerAcc->user()->create([
             'email' => $data['email'],
             'password' => Hash::make($data['password']),

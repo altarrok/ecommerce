@@ -16,6 +16,7 @@ class CreateShoppingCartsTable extends Migration
         Schema::create('shopping_carts', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('customer_account_id');
+            $table->double('total')->default(0.00);
             $table->timestamps();
         });
     }

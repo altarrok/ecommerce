@@ -17,9 +17,9 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('inventory_id');
             $table->string('name');
-            $table->string('description');
+            $table->text('description');
             $table->double('price');
-            $table->string('photo');
+            $table->string('photo')->nullable(); // TODO SET A DEFAULT VALUE
             $table->timestamps();
         });
     }
