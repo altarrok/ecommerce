@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Product;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -46,7 +47,16 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        $relatedProducts = Collection::make([]);
+        foreach ($product->categories as $category) {
+            foreach($category->products as $relatedProduct) {
+                if ($relatedProduct->id !== $product->id) {
+                    $relatedProducts->add($relatedProduct);
+                }
+            }
+        }
+        $relatedProducts = $relatedProducts->shuffle();
+        return view('product.show', compact('product', 'relatedProducts'));
     }
 
     /**
