@@ -11,8 +11,8 @@
                         <span class="mb-3"><a href="/product/{{ $product->id }}"><img class="img-thumbnail" src="https://cdn.pixabay.com/photo/2018/01/05/00/20/test-image-3061864_960_720.png"></a></span>
                         <span class="align-self-end h4 text-success font-weight-bold">{{ $product->price }} $</span>
                         <span class="h3"><a class="text-dark" href="/product/{{ $product->id }}">{{ \Illuminate\Support\Str::limit($product->name, 16, $end="..") }}</a></span>
-                        <span>{{ \Illuminate\Support\Str::limit($product->description, 60, "...") }}</span>
-                        <span></span>
+                        <span class="h5">{{ \Illuminate\Support\Str::limit($product->description, 60, "...") }}</span>
+                        <span class="mt-auto">by <a class="text-dark" href="/seller/{{ $product->inventory->sellerAccount->id }}">{{ $product->inventory->sellerAccount->name }}</a></span>
                     </div>
                 </div>
         @endforeach

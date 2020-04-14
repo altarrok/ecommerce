@@ -22,3 +22,5 @@ Route::get('/product/{product}', 'ProductController@show')->name('product.show')
 Route::get('/shopping_cart/add_item/{product}', 'ShoppingCartController@addItem');
 
 Route::get('/checkout', 'ShoppingCartController@checkout')->middleware('auth');
+
+Route::get('/seller/{sellerAccount}', 'SellerAccountController@show')->name('seller_account.show');

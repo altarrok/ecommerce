@@ -10,12 +10,14 @@
 
         methods: {
             add() {
-                axios.get('/shopping_cart/add_item/' + this.product_id).catch(errors => {
+                axios.get('/shopping_cart/add_item/' + this.product_id).then(response => {
+                    location.reload();
+                    return false;
+                }).catch(errors => {
                     if (errors.response.status == 401) {
                         window.location = '/login';
                     }
                 });
-                location.reload();
             }
         },
     }
