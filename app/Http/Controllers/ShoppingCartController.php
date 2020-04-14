@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Product;
 use App\ShoppingCart;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ShoppingCartController extends Controller
 {
@@ -81,5 +83,14 @@ class ShoppingCartController extends Controller
     public function destroy(ShoppingCart $shoppingCart)
     {
         //
+    }
+
+    public function addItem(Product $product) {
+        try {
+            auth()->user()->account->shoppingCart->products()->attach($product);
+            return true;
+        } catch (\Exception $exception) {
+            return false;
+        }
     }
 }

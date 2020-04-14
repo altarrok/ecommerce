@@ -15,7 +15,9 @@
             </div>
         </div>
     </div>
+    @if(!$relatedProducts->isEmpty())
     <div class="row mt-5"><h1>Related Products:</h1></div>
+    @endif
     <div class="row">
         @foreach($relatedProducts->splice(0, 4) as $relatedProduct)
             <div class="col-3 d-flex justify-content-center p-1 mb-4">

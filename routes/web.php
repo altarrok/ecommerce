@@ -18,3 +18,5 @@ Auth::routes();
 Route::get('/', 'IndexController@index')->name('index');
 
 Route::get('/product/{product}', 'ProductController@show')->name('product.show');
+
+Route::get('/shopping_cart/add_item/{product}', 'ShoppingCartController@addItem');

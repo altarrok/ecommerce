@@ -1918,13 +1918,12 @@ __webpack_require__.r(__webpack_exports__);
   props: ['product_id'],
   methods: {
     add: function add() {
-      axios.post('/shopping_cart/add_item/' + this.product_id).then(function (response) {
-        console.log(response.data);
-      })["catch"](function (errors) {
+      axios.get('/shopping_cart/add_item/' + this.product_id)["catch"](function (errors) {
         if (errors.response.status == 401) {
           window.location = '/login';
         }
       });
+      location.reload();
     }
   }
 });
