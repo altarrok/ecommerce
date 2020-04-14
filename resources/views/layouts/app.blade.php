@@ -71,6 +71,8 @@
                 </div>
             </div>
         </nav>
+        @guest()
+            @else
         <div class="float-right pr-5 pt-2 border-left border-dark pl-2 border-bottom">
             <div class="d-flex flex-column">
                 <span class="h1 mb-4">Shopping Cart</span>
@@ -85,8 +87,12 @@
                 <div class="row pl-4 pr-2 mb-4">
                     Total : {{ $totalCost }} $
                 </div>
+                <div class="row pl-4 pr-2 mb-4">
+                    <a href="/checkout" class="btn btn-outline-dark" role="button">Checkout</a>
+                </div>
             </div>
         </div>
+        @endguest
 
         <main class="py-4">
             @yield('content')

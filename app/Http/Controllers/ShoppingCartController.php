@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\ShoppingCart;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class ShoppingCartController extends Controller
 {
@@ -92,5 +91,9 @@ class ShoppingCartController extends Controller
         } catch (\Exception $exception) {
             return false;
         }
+    }
+
+    public function checkout() {
+        return view('checkout');
     }
 }

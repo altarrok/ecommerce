@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="582d7ac1-a9b9-42eb-be23-f13ff2bfb198" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/checkout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShoppingCartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShoppingCartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/addToCartButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/addToCartButton.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/product/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,13 +145,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\16044\Desktop\projects\ecommerce\resources\views\product" />
       <recent name="C:\Users\16044\Desktop\projects\ecommerce\resources\views" />
+      <recent name="C:\Users\16044\Desktop\projects\ecommerce\resources\views\product" />
     </key>
   </component>
   <component name="RunManager">
@@ -183,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586532232310</updated>
-      <workItem from="1586532242126" duration="44587000" />
+      <workItem from="1586532242126" duration="45805000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Add">
       <created>1586534802022</created>
@@ -297,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586832824264</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ShoppingCart view add">
+      <created>1586838807868</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1586838807869</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +329,8 @@
     <MESSAGE value="Index add" />
     <MESSAGE value="Product show view add" />
     <MESSAGE value="AddCartButton Vue Component add&#10;Product show view update" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddCartButton Vue Component add&#10;Product show view update" />
+    <MESSAGE value="ShoppingCart view add" />
+    <option name="LAST_COMMIT_MESSAGE" value="ShoppingCart view add" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -363,10 +370,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="567" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1586563177699" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1586832828057">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1586838827487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586832828057" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586838827487" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1586838220316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -375,9 +382,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586551056021" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586833828845">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586839515601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586833828845" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586839515601" />
   </component>
 </project>
