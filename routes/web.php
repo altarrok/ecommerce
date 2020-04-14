@@ -23,6 +23,6 @@ Route::get('/shopping_cart/add_item/{product}', 'ShoppingCartController@addItem'
 
 Route::get('/checkout', 'ShoppingCartController@checkout')->middleware('auth'); // TODO
 
-Route::get('/seller/{sellerAccount}', 'SellerAccountController@show')->name('seller_account.show'); // TODO
+Route::get('/seller/{sellerAccount}', 'SellerAccountController@show')->name('seller_account.show');
 
-Route::get('/category/{category}', 'CategoryController@show')->name('category.show'); // TODO
+Route::get('/category/{category}', 'CategoryController@show')->name('category.show');

@@ -46,7 +46,8 @@ class SellerAccountController extends Controller
      */
     public function show(SellerAccount $sellerAccount)
     {
-        //
+        $products = $sellerAccount->inventory->products->reverse();
+        return view('seller_account.show', compact('sellerAccount', 'products'));
     }
 
     /**

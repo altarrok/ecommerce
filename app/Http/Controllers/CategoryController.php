@@ -46,7 +46,8 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        //
+        $products = $category->products->reverse();
+        return view('category.show', compact('category', 'products'));
     }
 
     /**
