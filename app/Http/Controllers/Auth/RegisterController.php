@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\CustomerAccount;
 use App\Http\Controllers\Controller;
+use App\SellerAccount;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -52,6 +53,7 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'user-role' => ['required'],
         ]);
     }
 
@@ -63,11 +65,18 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $customerAcc = CustomerAccount::create([
-            'name' => $data['name'],
-        ]);
-        $customerAcc->shoppingCart()->create();
-        return $customerAcc->user()->create([
+        if ($data['user-role'] == 'customer') {
+            $acc = CustomerAccount::create([
+                'name' => $data['name'],
+            ]);
+            $acc->shoppingCart()->create();
+        } else {
+            $acc = SellerAccount::create([
+                'name' => $data['name'],
+            ]);
+            $acc->inventory()->create();
+        }
+        return $acc->user()->create([
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'user_state' => 'active',

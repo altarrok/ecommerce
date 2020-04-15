@@ -37577,30 +37577,38 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("a", { on: { click: _vm.add } }, [
-      _c("span", { staticClass: "h4" }, [
-        _vm._v("Add to "),
-        _c(
-          "svg",
-          {
-            attrs: {
-              xmlns: "http://www.w3.org/2000/svg",
-              width: "24",
-              height: "24",
-              viewBox: "0 0 24 24"
-            }
-          },
-          [
-            _c("path", {
+    _c(
+      "button",
+      {
+        staticClass: "btn btn-light",
+        attrs: { role: "button" },
+        on: { click: _vm.add }
+      },
+      [
+        _c("span", { staticClass: "h4" }, [
+          _vm._v("Add to "),
+          _c(
+            "svg",
+            {
               attrs: {
-                d:
-                  "M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"
+                xmlns: "http://www.w3.org/2000/svg",
+                width: "24",
+                height: "24",
+                viewBox: "0 0 24 24"
               }
-            })
-          ]
-        )
-      ])
-    ])
+            },
+            [
+              _c("path", {
+                attrs: {
+                  d:
+                    "M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"
+                }
+              })
+            ]
+          )
+        ])
+      ]
+    )
   ])
 }
 var staticRenderFns = []

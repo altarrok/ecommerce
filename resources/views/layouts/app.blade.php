@@ -49,6 +49,11 @@
                                 </li>
                             @endif
                         @else
+                            @if(\Illuminate\Support\Facades\Auth::user()->account instanceof \App\SellerAccount)
+                                <li class="nav-item">
+                                    <a href="/sellerAccount" class="nav-link"> Market Panel </a>
+                                </li>
+                            @endif
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->account->name }} <span class="caret"></span>
@@ -72,7 +77,7 @@
             </div>
         </nav>
         @guest()
-            @else
+            @elseif(\Illuminate\Support\Facades\Auth::user()->account instanceof \App\CustomerAccount)
         <div class="float-right pr-5 pt-2 border-left border-dark pl-2 border-bottom">
             <div class="d-flex flex-column">
                 <span class="h1 mb-4"><a class="text-dark" href="/shoppingCart">Shopping Cart</a></span>
@@ -87,9 +92,11 @@
                 <div class="row pl-4 pr-2 mb-4">
                     Total : {{ $totalCost }} $
                 </div>
+                @if($totalCost != 0)
                 <div class="row pl-4 pr-2 mb-4">
                     <a href="/checkout" class="btn btn-outline-primary w-100" role="button">Checkout</a>
                 </div>
+                @endif
             </div>
         </div>
         @endguest

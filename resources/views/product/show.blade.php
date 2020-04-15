@@ -17,7 +17,7 @@
                 <span class="mb-2">By: <a class="text-dark" href="/seller/{{ $product->inventory->sellerAccount->id }}">{{ $product->inventory->sellerAccount->name }}</a></span>
                 <span class="align-self-end h2 text-success mb-5">{{ $product->price }} $</span>
                 <span class="align-self-start h5 mb-3">{{ $product->description }}</span>
-                <add-to-cart-button product_id="{{ $product->id }}" class="align-self-center mt-auto w-50 btn btn-light"></add-to-cart-button>
+                <add-to-cart-button product_id="{{ $product->id }}" class="align-self-center mt-auto w-auto"></add-to-cart-button>
             </div>
         </div>
     </div>

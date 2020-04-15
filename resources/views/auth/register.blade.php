@@ -61,6 +61,23 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <label for="user-role" class="col-md-4 col-form-label text-md-right">User Role</label>
+
+                            <div class="form-check mt-2">
+                                <input class="form-control-input" type="radio" name="user-role" id="user-role1" value="customer" checked>
+                                <label class="form-control-label" for="user-role1">
+                                    Customer
+                                </label>&nbsp&nbsp
+
+                                <input class="form-control-input" type="radio" name="user-role" id="user-role2" value="seller">
+                                <label class="form-control-label" for="user-role2">
+                                    Seller
+                                </label>
+
+                            </div>
+                        </div>
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

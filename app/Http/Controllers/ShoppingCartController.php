@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Middleware\CheckCustomer;
 use App\Product;
 use App\ShoppingCart;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 
 class ShoppingCartController extends Controller
@@ -12,6 +14,7 @@ class ShoppingCartController extends Controller
 
     public function __construct() {
         $this->middleware('auth');
+        $this->middleware(CheckCustomer::class);
     }
 
     /**
@@ -101,11 +104,17 @@ class ShoppingCartController extends Controller
     }
 
     public function checkout() {
-        return view('shopping_cart.checkout');
+        $shoppingCart = Auth::user()->account->shoppingCart;
+        return view('shopping_cart.checkout', compact('shoppingCart'));
     }
 
     public function removeProduct(Product $product) {
         auth()->user()->account->shoppingCart->products()->detach($product);
         return Redirect::back();
+    }
+
+    public function paid() {
+        Auth::user()->account->shoppingCart->products()->detach();
+        return redirect(route('index'));
     }
 }
