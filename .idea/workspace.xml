@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="582d7ac1-a9b9-42eb-be23-f13ff2bfb198" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/category/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/seller_account/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shopping_cart/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SellerAccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SellerAccountController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShoppingCartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShoppingCartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopping_cart/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,11 +146,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/category" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/shopping_cart" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\16044\Desktop\projects\ecommerce\resources\views\shopping_cart" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\16044\Desktop\projects\ecommerce\resources\views\shopping_cart" />
       <recent name="C:\Users\16044\Desktop\projects\ecommerce\resources\views\category" />
       <recent name="C:\Users\16044\Desktop\projects\ecommerce\resources\views\seller_account" />
       <recent name="C:\Users\16044\Desktop\projects\ecommerce\resources\views" />
@@ -184,7 +189,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586532232310</updated>
-      <workItem from="1586532242126" duration="49709000" />
+      <workItem from="1586532242126" duration="55390000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Add">
       <created>1586534802022</created>
@@ -326,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586884818381</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="SellerAccount show view add&#10;Category show view add">
+      <created>1586885771163</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1586885771166</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +368,8 @@
     <MESSAGE value="ShoppingCart view add&#10;Minor debug" />
     <MESSAGE value="Minor debug" />
     <MESSAGE value="minor fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor fix" />
+    <MESSAGE value="SellerAccount show view add&#10;Category show view add" />
+    <option name="LAST_COMMIT_MESSAGE" value="SellerAccount show view add&#10;Category show view add" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -364,10 +377,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586814979382" />
-    <state x="456" y="115" key="CommitChangelistDialog2" timestamp="1586884814759">
+    <state x="50" y="139" key="CommitChangelistDialog2" timestamp="1586885768858">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="456" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586884814759" />
+    <state x="50" y="139" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586885768858" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586533443887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -396,10 +409,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="567" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1586563177699" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1586884819789">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1586885772846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586884819789" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586885772846" />
     <state width="600" height="424" key="javadoc.popup" timestamp="1586838220316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -408,9 +421,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586884961546" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586885721413">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586971604275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586885721413" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586971604275" />
   </component>
 </project>

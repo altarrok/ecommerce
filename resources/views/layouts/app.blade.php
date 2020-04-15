@@ -75,7 +75,7 @@
             @else
         <div class="float-right pr-5 pt-2 border-left border-dark pl-2 border-bottom">
             <div class="d-flex flex-column">
-                <span class="h1 mb-4">Shopping Cart</span>
+                <span class="h1 mb-4"><a class="text-dark" href="/shoppingCart">Shopping Cart</a></span>
                 <?php $totalCost = 0; ?>
                 @foreach(auth()->user()->account->shoppingCart->products as $product)
                 <div class="row pl-2 pr-2 mb-4">
@@ -88,7 +88,7 @@
                     Total : {{ $totalCost }} $
                 </div>
                 <div class="row pl-4 pr-2 mb-4">
-                    <a href="/checkout" class="btn btn-outline-dark" role="button">Checkout</a>
+                    <a href="/checkout" class="btn btn-outline-primary w-100" role="button">Checkout</a>
                 </div>
             </div>
         </div>

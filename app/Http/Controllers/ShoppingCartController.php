@@ -20,7 +20,8 @@ class ShoppingCartController extends Controller
      */
     public function index()
     {
-        //
+        $shopping_cart = auth()->user()->account->shoppingCart;
+        return view('shopping_cart.index', compact('shopping_cart'));
     }
 
     /**
@@ -99,6 +100,6 @@ class ShoppingCartController extends Controller
     }
 
     public function checkout() {
-        return view('checkout');
+        return view('shopping_cart.checkout');
     }
 }

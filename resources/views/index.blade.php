@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="h1 mb-4">Welcome to Altayo Laravel System, here are some products:</div>
+    <div class="h1 mb-4">Welcome to Altayo E-commerce System, here are some products:</div>
     @for($i = 0; $i < 4; $i++)
         <div class="row">
         @foreach($products->splice(0, 4) as $product)
