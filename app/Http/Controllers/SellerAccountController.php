@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Middleware\CheckSeller;
 use App\SellerAccount;
 use Illuminate\Http\Request;
 
 class SellerAccountController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +16,9 @@ class SellerAccountController extends Controller
      */
     public function index()
     {
-        //
+        $this->middleware(CheckSeller::class);
+        $sellerAccount = auth()->user()->account;
+        return view('seller_account.index', compact('sellerAccount'));
     }
 
     /**

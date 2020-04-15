@@ -29,3 +29,5 @@ Route::get('/shopping_cart/paid', 'ShoppingCartController@paid')->middleware('au
 Route::get('/seller/{sellerAccount}', 'SellerAccountController@show')->name('seller_account.show');
 
 Route::get('/category/{category}', 'CategoryController@show')->name('category.show');
+
+Route::get('/sellerAccount', 'SellerAccountController@index')->middleware(\App\Http\Middleware\CheckSeller::class);
