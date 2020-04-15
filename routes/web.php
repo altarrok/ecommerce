@@ -23,7 +23,7 @@ Route::get('/shopping_cart/add_item/{product}', 'ShoppingCartController@addItem'
 
 Route::get('/checkout', 'ShoppingCartController@checkout')->middleware('auth'); // TODO
 Route::get('/shoppingCart', 'ShoppingCartController@index')->middleware('auth')->name('shopping_cart.index');
-Route::get('/shopping_cart/remove/{product}', 'ShoppingCartController@removeProduct')->middleware('auth'); // TODO
+Route::get('/shopping_cart/remove/{product}', 'ShoppingCartController@removeProduct')->middleware('auth');
 
 Route::get('/seller/{sellerAccount}', 'SellerAccountController@show')->name('seller_account.show');
 
